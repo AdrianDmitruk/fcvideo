@@ -1,0 +1,50 @@
+@mixin filterTitle {
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 1;
+}
+@mixin filterReset {
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 20px;
+}
+@mixin search {
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 21px;
+}
+@mixin searchBtn {
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 21px;
+}
+@mixin title {
+  font-size: 20px;
+  font-weight: 600;
+  line-height: normal;
+}
+@mixin titleSub {
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 20px;
+}
+@mixin location {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: normal;
+}
+@mixin titleFull {
+  font-size: 28px;
+  font-weight: 700;
+  line-height: normal;
+}
+@mixin subFull {
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 20px;
+}
+@mixin locationFull {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 140%;
+}

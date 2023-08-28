@@ -1,0 +1,44 @@
+@import "src/theme/variables";
+@import "src/theme/fonts";
+
+.filter {
+  max-width: 315px;
+  width: 100%;
+  background: $white;
+  padding: 20px;
+  border-radius: 12px;
+  border: 1px solid $grey-200;
+  height: max-content;
+  &Header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 35px;
+  }
+
+  &Title {
+    @include filterTitle;
+    color: $black;
+  }
+
+  &Reset {
+    @include filterReset;
+    color: $grey-500;
+  }
+
+  &Tags {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  &Btn {
+    color: $white;
+    background: $blue-500;
+    width: 100%;
+    padding: 10px 0;
+    margin-top: 20px;
+    @include filterReset;
+    border-radius: 8px;
+  }
+}

@@ -1,0 +1,30 @@
+@import "src/theme/variables";
+@import "src/theme/fonts";
+
+.card {
+  display: flex;
+  flex-direction: column;
+  gap: 13px;
+  padding: 24px;
+  border-radius: 12px;
+  border: 1px solid $grey-200;
+  background: $white;
+  &Title {
+    @include title;
+    color: $blue-500;
+  }
+
+  &Subtitle {
+    @include titleSub;
+  }
+
+  &Location {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+  }
+
+  &LocationText {
+    @include location;
+  }
+}

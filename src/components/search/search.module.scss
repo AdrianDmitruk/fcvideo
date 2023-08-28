@@ -1,0 +1,37 @@
+@import "src/theme/variables";
+@import "src/theme/fonts";
+
+.serach {
+  width: 100%;
+  position: relative;
+
+  &Input {
+    background: $white;
+    width: 100%;
+    padding: 12px 14px 12px 14px;
+    @include search;
+    color: $grey-500;
+    border-radius: 8px;
+    border: 1px solid $grey-200;
+
+    &::placeholder {
+      @include search;
+      color: $grey-500;
+    }
+  }
+
+  &Btn {
+    padding: 6px 0;
+    border-radius: 8px;
+    background: $blue-500;
+    @include searchBtn;
+    color: $white;
+    max-width: 83px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    position: absolute;
+    top: 7px;
+    right: 12px;
+  }
+}
